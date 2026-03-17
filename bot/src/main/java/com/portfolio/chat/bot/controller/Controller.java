@@ -11,10 +11,13 @@ import java.util.Map;
 
 @AllArgsConstructor
 @RestController
-@RequestMapping("/gemini/api/v1")
 public class Controller {
     private final ServiceImpl serviceImpl;
-    @PostMapping("/ask")
+    @GetMapping("/")
+    public String defaultCase(){
+        return "Server is running";
+    }
+    @PostMapping("/gemini/api/v1/ask")
     public ResponseEntity<String> askQuestion(@RequestBody Map<String, String> payload){
         String question= payload.get("question");
         String answer= serviceImpl.getAnswer(question);
