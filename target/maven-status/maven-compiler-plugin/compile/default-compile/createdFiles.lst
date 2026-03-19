@@ -1,0 +1,4 @@
+com\portfolio\chat\bot\config\WebClientConfig.class
+com\portfolio\chat\bot\serviceImpl\ServiceImpl.class
+com\portfolio\chat\bot\Application.class
+com\portfolio\chat\bot\controller\Controller.class
